@@ -1,0 +1,196 @@
+%=================================
+%Please do not change this environment
+\documentclass{annurep}
+\usepackage{graphicx}
+\textheight 25.cm
+\textwidth 17cm
+\oddsidemargin -18pt
+\evensidemargin 0pt
+\topmargin -50pt
+\pagestyle{empty}
+%=================================
+
+
+\newcommand{\beq}{\begin{eqnarray}}
+\newcommand{\eeq}{\end{eqnarray}}
+\newcommand{\ket}{\rangle}
+\newcommand{\bra}{\langle}
+\newcommand{\del}{\partial}
+\newcommand{\pslash}{{p\hspace{-5pt}/}}
+\newcommand{\dslash}{{\del \hspace{-5pt}/}}
+\newcommand{\zslash}{{z\hspace{-5pt}/}}
+\newcommand{\kslash}{{k\hspace{-6pt}/}}
+\newcommand{\Thep}{\Theta^+}
+\newcommand\gsim{\displaystyle\mathop{>}_{\sim}}
+\newcommand\lsim{\displaystyle\mathop{<}_{\sim}}
+
+
+\begin{document}
+
+%==============================================================
+%    Authors and tytle
+%
+\begin{center}
+{\large \bf Decay of $\Thep$ in a quark model}
+\vspace*{0.3cm}
+
+%Authors
+A. Hosaka$^{1}$ and B. Hosaka$^{2}$\\
+%Address{1}
+$^{1}${\it Research Center for Nuclear Physics (RCNP), Osaka University,
+Ibaraki, Osaka 567-0047, Japan}\\
+%Address{2}
+$^{2}${\it Research Center for Nuclear Physics (RCNP), Osaka University,
+Ibaraki, Osaka 567-0047, Japan}\\
+\end{center}
+
+\vspace*{0.5cm}
+%
+%==============================================================
+%     Main text
+%
+One of the distinguished features of the pentaquark particle 
+$\Theta^+$ is its very narrow width~\cite{penta}.  
+In this report we study the decay of $\Thep$ in the 
+non-relativistic quark model~\cite{hos}.  
+
+In the quark model, 
+the decay of the pentaquark 
+occurs through the fall apart process, in which the 
+five quarks dissociate into a three-quark cluster, a nucleon, 
+a quark-antiquark cluster, a meson, 
+without pair creation of the 
+quarks
+as shown in Fig.~\ref{fallapart}.  
+The decay amplitude is then written as a product of the 
+spectroscopic factor 
+and the basic interaction matrix element. 
+For the latter, we employ the standard 
+meson-quark interaction of the Yukawa type:
+$
+{\cal L}_{\rm int} 
+=
+-i\ g \bar \psi \gamma_5 \Phi \psi 
+\sim 
+\frac{g}{2m} \chi^\dagger \vec \sigma \cdot \vec \nabla \Phi \chi
+\, , 
+$
+where we have adopted the standard notation.   
+
+%figure---------------------------------------------
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm,clip]{mbb.eps}
+\caption{
+Meson-baron couplings involving an $mqq$ coupling. 
+(a) Transition of a three-quark baryon to another three-quark baryon.
+(b) A decay of pentaquark baryon into a three-quark baryon and a meson.
+(c) A diagram equivalent to (b).}
+\label{fallapart}
+\end{figure}
+%figure---------------------------------------------
+
+The matrix element is then taken between the 
+$\Thep$ in the initial state and the kaon and nucleon in the 
+final state:
+\beq
+{\cal M}_{\Theta^+ \to K^+ n} =
+-i \sqrt{2} 
+\bra n_f(udd) |  
+ \int d^3 x \, g \bar \psi \gamma_5 \psi
+e^{-i \vec q \cdot \vec x} 
+|\Thep(uudd\bar s)\ket ,
+\label{calM1}
+\eeq
+where the initial state $\Thep$ can be expressed as 
+a kaon-nucleon like state with a spectroscopic factor $a$:
+$
+|\Thep\ket = a |(u(1)d(2)d(3))^n (u(4)\bar s(5))^{K^+}\ket 
++ \cdots \, .
+$
+
+We have computed this matrix element for several $J^P$.  
+The results are summarized in Table 1.  
+From there, we see that the width of the negative 
+parity $\Thep$ is too wide for the state to be regarded as 
+a sharp resonance.    
+
+For the positive parity $\Thep$, the column SF (spin-flavor) 
+shows the results for the $\Thep$ configuration minimizing 
+the spin-flavor interaction, where the spectroscopic factor 
+is $\sqrt{5/96}$~\cite{Carlson:2003xb}.  
+The column SC (spin-color) is for the result for the 
+configuration minimizing the spin-color interaction, which  
+has a spectroscopic factor $\sqrt{5/192}$.  
+We have also shown in the column JW the result for the 
+case where the Jaffe-Wilzeck type of diquark correlation 
+is developed~\cite{Jaffe:2003sg}.  
+In this case, the spectroscopic factor becomes 
+$\sqrt{5/576}$~\cite{Carlson:2003xb}
+instead of $\sqrt{5/96}$, which reduces the decay width 
+by the factor 6 from the result of SF. 
+Typically, the decay width of a positive parity $\Thep$ is 
+of order 10 MeV.  
+To get an even narrower width $\sim 1$ MeV, we need further mechanism.  
+
+
+%---------------------------------------------
+\begin{table}[b]
+\centering
+\caption{\label{widthp} \small The $KN\Thep$ coupling 
+constant $g_{KN\Thep}$ and decay width (in MeV) 
+of $\Thep$ for $J^P = 1/2^{\pm}$.  
+}
+\begin{tabular}{ c c | c c c c }
+\hline
+ &  & \multicolumn{4}{c}{$g_{KN\Theta}$} \\
+ &  & $J^P=1/2^-$ & & $1/2^+$ \\
+\hline
+$\bra r^2 \ket^{1/2}$ &  $\alpha_0^2$  &  & SF  &  SC  &  JW\
+$1/\sqrt{2}$ fm & 3 fm$^{-2}$ & 4.1 & 7.7 & 5.5 & 3.2\\
+1 fm & 1.5 fm$^{-2}$ & 3.2 & 8.4 & 5.9 & 3.4\\
+\hline
+\end{tabular}
+\end{table}
+%---------------------------------------------
+
+
+%=============================================
+% In the environment {thebibliography} below, 
+% DO NOT REMOVE \vspace*{-0.2cm}
+%=============================================
+
+\begin{thebibliography}{9}
+%
+\vspace*{-0.2cm}
+\bibitem{penta}
+For an overview of the recent status, see presentations at  
+the international workshop PENTAQUARK04 held at SPring-8, 
+Jul. 20-23 (2004):
+www.rcnp.osaka-u.ac.jp/$\sim$penta04/
+%
+\vspace*{-0.2cm}
+\bibitem{Nakano:2003qx}
+T.~Nakano {\it et al.}  [LEPS Collaboration],
+Phys.\ Rev.\ Lett.\  {\bf 91}, 012002 (2003)
+[arXiv:hep-ex/0301020].
+%
+\vspace*{-0.2cm}
+\bibitem{hos}
+A. Hosaka, M. Oka and T. Shinozaki, 
+Preprint, (2004).  
+%
+\vspace*{-0.2cm}
+\bibitem{Carlson:2003xb}
+C.~E.~Carlson, C.~D.~Carone, H.~J.~Kwee and V.~Nazaryan,
+Phys.\ Rev.\ D {\bf 70}, 037501 (2004)
+[arXiv:hep-ph/0312325].
+%
+\vspace*{-0.2cm}
+\bibitem{Jaffe:2003sg}
+R.~L.~Jaffe and F.~Wilczek,
+Phys.\ Rev.\ Lett.\  {\bf 91}, 232003 (2003)
+[arXiv:hep-ph/0307341].
+
+\end{thebibliography}
+\end{document}
